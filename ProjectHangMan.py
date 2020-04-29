@@ -1,5 +1,12 @@
 # import time //time.sleep(100)
-sec = 'python'
+import random
+with open('word_list', 'r') as f:
+    words1 = f.read().splitlines()
+
+# Returns any random word
+sec = random.choice(words1)
+print(f'The Word Lenggth is {len(sec)} ')
+# sec = 'python'
 d = list(set(list(sec)))
 trys = 0
 trys = int(input('How many tries do u want to guess the word:'))
@@ -18,12 +25,12 @@ while (trys):
         else:
             flag = True
     if flag == True:
-        print(' Awsome , You won The Game In Advance!')
+        print(' \n Awsome , You won The Game In Advance!')
         exit(0)
-    print(f'{trys} Chances left .')
+    print(f'\n{trys} Chances left .')
     c = input('\n guess a letter : ')
     if len(c) > 1 or len(c) == 0:
-        print('No cheating!')
+        print('\n No cheating!')
     else:
         if c[0] in sec:
             print(' Good ')
@@ -51,6 +58,6 @@ for k in sec:
 
 
 if flag == True:
-    print('Good , You Win!')
+    print('\n Good , You Win!')
 else:
-    print('Sorry, Better luck Next Time.')
+    print('\n Sorry, Better luck Next Time.')
