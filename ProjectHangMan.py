@@ -1,6 +1,6 @@
 # import time //time.sleep(100)
 import random
-with open('word_list', 'r') as f:
+with open('word_list.txt', 'r') as f:
     words1 = f.read().splitlines()
 # Returns any random word
 sec = random.choice(words1)
