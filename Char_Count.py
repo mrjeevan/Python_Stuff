@@ -1,4 +1,4 @@
-def multiple_letter_count(input):
+def multiple_letter_count(a):
     b = {a[i]:a.count(a[i]) for i in range(0,len(a))}
     return b
     # return b
