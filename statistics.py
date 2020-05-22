@@ -23,5 +23,6 @@ def statistics(f1):
     file.close()
     return d
 
-info = statistics('Menue.py')
+z = input('Enter path / file name [ With exttention ] : ')
+info = statistics(z)
 print(f"\n Your file contains {info['lines']} Lines {info['words']} Words and {info['characters']} Characters.")
