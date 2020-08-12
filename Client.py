@@ -37,7 +37,7 @@ while end:
     mssg = input('Enter : ')
     send(mssg)
     opt = input('Do U Want To Exit : ')
-    if opt == 'Y' or opt == 'y' or opt == 'Yes' or opt == 'YES':
+    if opt == 'Y' or opt == 'y' or opt == 'Yes' or opt == 'YES': # Worst way !
         send(Disconnect_msg)
         break
 
