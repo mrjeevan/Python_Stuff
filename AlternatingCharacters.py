@@ -14,3 +14,4 @@ def alternatingCharacters(s):
 
 e = alternatingCharacters(list(input('input')))
 print(e)
+
