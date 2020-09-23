@@ -8,7 +8,7 @@ def clear():
 
 clear()
 n = int(input(' Enter number of rows : '))
-m = int(input(' Enter number of rows : '))
+m = int(input(' Enter number of cols : '))
 board_size = [n,m] # [row, col]
 x_required = int(input("How many x's can u find : "))
 times = 0
@@ -84,7 +84,7 @@ while len(x_found) != len(x_hidden):
     clear()
     stats()
     display_board(board_size, x_found)
-    print(f'debug :{x_hidden}')
+    # print(f'debug :{x_hidden}')
     hr()
     guess = input(r'Guess : ')
     times +=1
