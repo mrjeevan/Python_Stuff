@@ -71,7 +71,7 @@ option = 'y'
 name = input('Enter your name : ')
 
 greet = ['Hi', 'Hello', 'Ahola', 'Greetings']
-cong = ['congratulation', 'Awsome', 'Great', 'Bravo']
+cong = ['congratulation', 'Awesome', 'Great', 'Bravo']
 bye = ['bye', 'farewell', 'see u later']
 
 print(f'** {random.choice(greet)} {name}, Welcome to the guessing game !! **\n')
